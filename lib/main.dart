@@ -5,7 +5,6 @@ import 'package:sizer/sizer.dart';
 import 'provider/authprovider.dart';
 import 'provider/bookingprovider.dart';
 import 'provider/carprovider.dart';
-import 'screens/onboardingscreen.dart';
 
 void main() {
   runApp(
@@ -38,4 +37,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

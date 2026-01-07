@@ -53,7 +53,7 @@ class CarDetailScreen extends StatelessWidget {
             // Hero Car Image with Gradient Overlay
             Stack(
               children: [
-                Image.network(
+                Image.asset(
                   car.imageUrl,
                   height: 50.h,
                   width: double.infinity,

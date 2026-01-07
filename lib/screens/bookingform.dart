@@ -77,7 +77,7 @@ class _BookingFormScreenState extends State<BookingFormScreen> {
               borderRadius: BorderRadius.circular(20),
               child: Stack(
                 children: [
-                  Image.network(
+                  Image.asset(
                     car.imageUrl,
                     height: 35.h,
                     width: double.infinity,

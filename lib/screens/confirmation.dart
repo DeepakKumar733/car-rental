@@ -1,8 +1,10 @@
+import 'package:car_project/screens/carlist.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 
+import '../globalfunction/globalfunction.dart';
 import '../provider/bookingprovider.dart';
 import '../provider/carprovider.dart';
 import '../constants/colorConstant.dart'; 
@@ -59,7 +61,7 @@ class ConfirmationScreen extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(24),
-                  child: Image.network(
+                  child: Image.asset(
                     car.imageUrl,
                     height: 40.h,
                     width: double.infinity,
@@ -181,7 +183,7 @@ class ConfirmationScreen extends StatelessWidget {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                   elevation: 10,
                 ),
-                onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
+                onPressed: () =>  Twl.navigateTo(context, const CarListScreen()),
                 child: Text(
                   'Back to Home',
                   style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
